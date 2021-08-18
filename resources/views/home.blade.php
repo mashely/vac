@@ -58,10 +58,10 @@
           <div class="pt-4">
             <div id="sales-status-chart-legend" class="sales-status-chart-legend">
                 <ul class="legend2">
-                    <li><span class="legend-label" style="background-color:#392c70"></span>Zaidi ya 25<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$zaidiya25}}%</label></li>
-                    <li><span class="legend-label" style="background-color:#04b76b"></span>18 hadi 24<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$_18hadi24}}%</label></li>
-                    <li><span class="legend-label" style="background-color:#ff5e6d"></span>8 hadi 17<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$_8hadi17 }}%</label></li> 
-                <li><span class="legend-label" style="background-color:#eeeeee"></span>Chini ya 8<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$Chiniya8}}%</label></li>
+                    <li><span class="legend-label" style="background-color:#392c70"></span>Zaidi ya 25<label class="badge badge-light badge-pill legend-percentage ml-auto">{{25}}%</label></li>
+                    <li><span class="legend-label" style="background-color:#04b76b"></span>18 hadi 24<label class="badge badge-light badge-pill legend-percentage ml-auto">{{24}}%</label></li>
+                    <li><span class="legend-label" style="background-color:#ff5e6d"></span>8 hadi 17<label class="badge badge-light badge-pill legend-percentage ml-auto">{{17 }}%</label></li> 
+                <li><span class="legend-label" style="background-color:#eeeeee"></span>Chini ya 8<label class="badge badge-light badge-pill legend-percentage ml-auto">{{8}}%</label></li>
             
             </ul></div>
           </div>
