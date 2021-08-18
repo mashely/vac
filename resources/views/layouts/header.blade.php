@@ -197,61 +197,61 @@
             <!-- To do section tab ends -->
             <div class="tab-pane fade show active scroll-wrapper" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
               <div class="d-flex align-items-center justify-content-between border-bottom">
-                <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+                <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Staff</p>
                 <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See All</small>
               </div>
               <ul class="chat-list">
                 <li class="list active">
-                  <div class="profile"><img src="{{ url('images/faces/face1.jpg') }}" alt="image"><span class="online"></span></div>
+                  <div class="profile"><img src="{{ url('images/faces/hellenm.jpg') }}" alt="image"><span class="online"></span></div>
                   <div class="info">
-                    <p>Thomas Douglas</p>
+                    <p>Hellen Maziku</p>
                     <p>Available</p>
                   </div>
-                  <small class="text-muted my-auto">19 min</small>
+                  <small class="text-muted my-auto">0717 743 350</small>
                 </li>
                 <li class="list">
-                  <div class="profile"><img src="{{ url('images/faces/face2.jpg') }}" alt="image"><span class="offline"></span></div>
+                  <div class="profile"><img src="{{ url('images/faces/jcosmas.jpg') }}" alt="image"><span class="offline"></span></div>
                   <div class="info">
                     <div class="wrapper d-flex">
-                      <p>Catherine</p>
+                      <p>Cosmas Joseph</p>
                     </div>
-                    <p>Away</p>
-                  </div>
-                  <div class="badge badge-success badge-pill my-auto mx-2">4</div>
-                  <small class="text-muted my-auto">23 min</small>
-                </li>
-                <li class="list">
-                  <div class="profile"><img src="{{ url('images/faces/face3.jpg') }}" alt="image"><span class="online"></span></div>
-                  <div class="info">
-                    <p>Daniel Russell</p>
                     <p>Available</p>
                   </div>
-                  <small class="text-muted my-auto">14 min</small>
+                  <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                  <small class="text-muted my-auto">0754 557 744</small>
                 </li>
                 <li class="list">
-                  <div class="profile"><img src="{{ url('images/faces/face4.jpg') }}" alt="image"><span class="offline"></span></div>
+                  <div class="profile"><img src="{{ url('images/faces/jimmym.jpg') }}" alt="image"><span class="online"></span></div>
                   <div class="info">
-                    <p>James Richardson</p>
-                    <p>Away</p>
+                    <p>Jimmy Mbelwa</p>
+                    <p>Available</p>
                   </div>
-                  <small class="text-muted my-auto">2 min</small>
+                  <small class="text-muted my-auto">0753 523 562</small>
+                </li>
+                <li class="list">
+                  <div class="profile"><img src="{{ url('images/faces/malnado.jpg') }}" alt="image"><span class="offline"></span></div>
+                  <div class="info">
+                    <p>Mashely Arnold</p>
+                    <p>all time available</p>
+                  </div>
+                  <small class="text-muted my-auto">0786 226 935</small>
                 </li>
                 <li class="list">
                   
                   <div class="profile"><img src="{{ url('images/custom/y4c.png') }}" alt="image"><span class="online"></span></div>
                   <div class="info">
-                    <p>Madeline Kennedy</p>
-                    <p>Available</p>
+                    <p>y4c</p>
+                    <p>Away</p>
                   </div>
-                  <small class="text-muted my-auto">5 min</small>
+                  <small class="text-muted my-auto">0711 714265</small>
                 </li>
                 <li class="list">
-                  <div class="profile"><img src="{{ url('images/faces/face6.jpg') }}" alt="image"><span class="online"></span></div>
+                  <div class="profile"><img src="{{ url('images/faces/moses.jpg') }}" alt="image"><span class="online"></span></div>
                   <div class="info">
-                    <p>Sarah Graves</p>
+                    <p>Mosses Ismail</p>
                     <p>Available</p>
                   </div>
-                  <small class="text-muted my-auto">47 min</small>
+                  <small class="text-muted my-auto">0754 710 815</small>
                 </li>
               </ul>
             </div>
