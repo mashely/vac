@@ -58,10 +58,10 @@
           <div class="pt-4">
             <div id="sales-status-chart-legend" class="sales-status-chart-legend">
                 <ul class="legend2">
-                    <li><span class="legend-label" style="background-color:#392c70"></span>Zaidi ya 25<label class="badge badge-light badge-pill legend-percentage ml-auto">{{zaidiya25}}%</label></li>
-                    <li><span class="legend-label" style="background-color:#04b76b"></span>18 hadi 24<label class="badge badge-light badge-pill legend-percentage ml-auto">{{miakahadi24}}%</label></li>
-                    <li><span class="legend-label" style="background-color:#ff5e6d"></span>8 hadi 17<label class="badge badge-light badge-pill legend-percentage ml-auto">{miakahadi17}}%</label></li> 
-                <li><span class="legend-label" style="background-color:#eeeeee"></span>Chini ya 8<label class="badge badge-light badge-pill legend-percentage ml-auto">{{Chiniya8}}%</label></li>
+                    <li><span class="legend-label" style="background-color:#392c70"></span>Zaidi ya 25<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$zaidiya25}}%</label></li>
+                    <li><span class="legend-label" style="background-color:#04b76b"></span>18 hadi 24<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$_18hadi24}}%</label></li>
+                    <li><span class="legend-label" style="background-color:#ff5e6d"></span>8 hadi 17<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$_8hadi17 }}%</label></li> 
+                <li><span class="legend-label" style="background-color:#eeeeee"></span>Chini ya 8<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$Chiniya8}}%</label></li>
             
             </ul></div>
           </div>
@@ -88,11 +88,11 @@
           <div class="pt-4">
             <div id="sales-status-chart-legend" class="sales-status-chart-legend">
                 <ul class="legend2">
-                    <li><span class="legend-label" style="background-color:#392c70"></span>Kinondoni<label class="badge badge-light badge-pill legend-percentage ml-auto">{{ Kinondoni }}}%</label></li>
-                    <li><span class="legend-label" style="background-color:#889992"></span>Ilala<label class="badge badge-light badge-pill legend-percentage ml-auto">{{Ilala}}%</label></li>
-                    <li><span class="legend-label" style="background-color:#ff5e6d"></span>Kigamboni<label class="badge badge-light badge-pill legend-percentage ml-auto">{{Kigamboni}}%</label></li> 
-                    <li><span class="legend-label" style="background-color:#eeeeee"></span>Temeke<label class="badge badge-light badge-pill legend-percentage ml-auto">{{Temeke}}%</label></li>
-                    <li><span class="legend-label" style="background-color:#889992"></span>Ubungo<label class="badge badge-light badge-pill legend-percentage ml-auto">{{Ubungo}}%</label></li>
+                    <li><span class="legend-label" style="background-color:#392c70"></span>Kinondoni<label class="badge badge-light badge-pill legend-percentage ml-auto">{{ $Kinondoni }}}%</label></li>
+                    <li><span class="legend-label" style="background-color:#889992"></span>Ilala<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$Ilala}}%</label></li>
+                    <li><span class="legend-label" style="background-color:#ff5e6d"></span>Kigamboni<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$Kigamboni}}%</label></li> 
+                    <li><span class="legend-label" style="background-color:#eeeeee"></span>Temeke<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$Temeke}}%</label></li>
+                    <li><span class="legend-label" style="background-color:#889992"></span>Ubungo<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$Ubungo}}%</label></li>
 
             </ul></div>
           </div>
@@ -120,9 +120,9 @@
         <div class="pt-4">
           <div id="sales-status-chart-legend" class="sales-status-chart-legend">
               <ul class="legend2">
-                  <li><span class="legend-label" style="background-color:#392c70"></span>kijinsia<label class="badge badge-light badge-pill legend-percentage ml-auto">{{Kijinsia}}%</label></li>
-                  <li><span class="legend-label" style="background-color:#04b76b"></span>kimwili<label class="badge badge-light badge-pill legend-percentage ml-auto">{{Kimwili}}%</label></li>
-                  <li><span class="legend-label" style="background-color:#ff5e6d"></span>kihisia<label class="badge badge-light badge-pill legend-percentage ml-auto">{{Kihisia}}%</label></li> 
+                  <li><span class="legend-label" style="background-color:#392c70"></span>kijinsia<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$Kijinsia}}%</label></li>
+                  <li><span class="legend-label" style="background-color:#04b76b"></span>kimwili<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$Kimwili}}%</label></li>
+                  <li><span class="legend-label" style="background-color:#ff5e6d"></span>kihisia<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$Kihisia}}%</label></li> 
           </ul></div>
         </div>
       </div>
@@ -150,9 +150,9 @@
         <div class="pt-4">
           <div id="sales-status-chart-legend" class="sales-status-chart-legend">
               <ul class="legend2">
-                  <li><span class="legend-label" style="background-color:#392c70"></span>mzazi<label class="badge badge-light badge-pill legend-percentage ml-auto">{{mzazi}}%</label></li>
-                  <li><span class="legend-label" style="background-color:#04b76b"></span>mlezi<label class="badge badge-light badge-pill legend-percentage ml-auto">{{mlaezi}}%</label></li>
-                  <li><span class="legend-label" style="background-color:#ff5e6d"></span>mtumwingine<label class="badge badge-light badge-pill legend-percentage ml-auto">{{mtumwingine}}%</label></li> 
+                  <li><span class="legend-label" style="background-color:#392c70"></span>mzazi<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$mzazi}}%</label></li>
+                  <li><span class="legend-label" style="background-color:#04b76b"></span>mlezi<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$mlaezi}}%</label></li>
+                  <li><span class="legend-label" style="background-color:#ff5e6d"></span>mtumwingine<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$mtumwingine}}%</label></li> 
              
           
           </ul></div>
