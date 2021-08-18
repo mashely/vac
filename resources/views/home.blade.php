@@ -88,7 +88,7 @@
           <div class="pt-4">
             <div id="sales-status-chart-legend" class="sales-status-chart-legend">
                 <ul class="legend2">
-                    <li><span class="legend-label" style="background-color:#392c70"></span>Kinondoni<label class="badge badge-light badge-pill legend-percentage ml-auto">{{ $Kinondoni }}}%</label></li>
+                    <li><span class="legend-label" style="background-color:#392c70"></span>Kinondoni<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$Kinondoni}}}%</label></li>
                     <li><span class="legend-label" style="background-color:#889992"></span>Ilala<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$Ilala}}%</label></li>
                     <li><span class="legend-label" style="background-color:#ff5e6d"></span>Kigamboni<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$Kigamboni}}%</label></li> 
                     <li><span class="legend-label" style="background-color:#eeeeee"></span>Temeke<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$Temeke}}%</label></li>
