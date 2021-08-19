@@ -17,3 +17,16 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// ussd
+Route::get('devs/jinsia', 'RoughController@jinsia');
+Route::get('devs/umri', 'RoughController@umri');
+Route::get('devs/mahali', 'RoughController@mahali');
+
+Route::post('devs/ussd_request', 'RoughController@index');
+// So this is what i did, i made a route which receive your request
+Route::get('explore', 'Api\Homeplace\MainController@explore');
+Route::get('/', 'Api\Search\SearchController@store');
+// system
+Route::get('ads/visit/{id}', 'MainController@adsManager');
+Route::resource('external-resource', 'Api\Search\ExternalResourceController');
