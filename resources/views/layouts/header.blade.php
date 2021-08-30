@@ -7,7 +7,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Melody Admin</title>
+  <title>Violence</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{ url('vendors/iconfonts/font-awesome/css/all.min.css') }}">
   <link rel="stylesheet" href="{{ url('vendors/css/vendor.bundle.base.css') }}">

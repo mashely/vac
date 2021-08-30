@@ -23,12 +23,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $domain = 'https://www.mienxy.com';
+       // $domain = 'https://www.mienxy.com';
+
+
+        $domain = 'https://childviolence.or.tz';
         $client = new \GuzzleHttp\Client();
 
 
         $jinsiaApi = $client->get($domain.'/api/devs/jinsia');
-
         if($jinsiaApi->getStatusCode() != 200){
             return redirect()->back()->with('error', 'Sorry!, no internet connection');
         }
@@ -43,7 +45,6 @@ class HomeController extends Controller
 
 
         $umriApi = $client->get($domain.'/api/devs/umri');
-
         if($umriApi->getStatusCode() != 200){
             return redirect()->back()->with('error', 'Sorry!, no internet connection');
         }
@@ -54,7 +55,6 @@ class HomeController extends Controller
 
 
         $mahaliApi = $client->get($domain.'/api/devs/mahali');
-
         if($umriApi->getStatusCode() != 200){
             return redirect()->back()->with('error', 'Sorry!, no internet connection');
         }
@@ -63,8 +63,10 @@ class HomeController extends Controller
 
 
 
-        $AinazaunyanyasajiApi = $client->get($domain.'/api/devs/Ainazaunyanyasaji');
 
+
+
+        $AinazaunyanyasajiApi = $client->get($domain.'/api/devs/Ainazaunyanyasaji');
         if($AinazaunyanyasajiiApi->getStatusCode() != 200){
             return redirect()->back()->with('error', 'Sorry!, no internet connection');
         } 
@@ -74,15 +76,14 @@ class HomeController extends Controller
 
 
 
-        $muhusikawaunyanyasajiApi = $client->get($domain.'/api/devs/muhusikawaunyanyasaji');
 
+
+
+        $muhusikawaunyanyasajiApi = $client->get($domain.'/api/devs/muhusikawaunyanyasaji');
         if($muhusikawaunyanyasajiApi->getStatusCode() != 200){
             return redirect()->back()->with('error', 'Sorry!, no internet connection');
         }
         $muhusikawaunyanyasajiTaarifa = json_decode($muhusikawaunyanyasajiApi->getBody(), true);
-
-
-
 
 
 
@@ -93,10 +94,16 @@ class HomeController extends Controller
 
 
 
-        $kijinsia= $AinazaunyanyasajiTaarifa['kijinsia'];
-        $kimwili= $AinazaunyanyasajiTaarifa['kimwili'];
-        $kihisia= $AinazaunyanyasajiTaarifa['kihisia'];
-    
+
+
+        $zaidiya25= $umriTaarifa['zaidiya25'];
+        $katiya18na28= $umriTaarifa['katiya18na28'];
+        $katiya8hadi17  = $umriTaarifa['katiya8hadi17'];
+        $chiniya8 = $umriTaarifa['chiniya8'];
+
+
+
+
 
 
 
@@ -109,14 +116,17 @@ class HomeController extends Controller
 
 
 
-         $zaidiya25= $umriTaarifa['zaidiya25'];
-         $katiya18na28= $umriTaarifa['katiya18na28'];
-         $katiya8hadi17  = $umriTaarifa['katiya8hadi17'];
-         $chiniya8 = $umriTaarifa['chiniya8'];
+
+        $kijinsia= $AinazaunyanyasajiTaarifa['kijinsia'];
+        $kimwili= $AinazaunyanyasajiTaarifa['kimwili'];
+        $kihisia= $AinazaunyanyasajiTaarifa['kihisia'];
+    
 
 
 
 
+
+        
          $mzazi= $muhusikawaunyanyasajiTaarifa['mzazi'];
          $mlezi= $muhusikawaunyanyasajiTaarifa['mlezi'];
          $mtumwingine= $muhusikawaunyanyasajiTaarifa['mtumwingine'];
@@ -126,10 +136,26 @@ class HomeController extends Controller
 
 
 
-        return view('home')->with(array('mme'=>$mme, 'mke'=>$mke, 'zaidiya25'=>$zaidiya25,
-        'katiya18na28'=>$katiya18na28, 'katiya8hadi17'=>$katiya8hadi17, 
-        'chiniya8'=>$chiniya8, 'kinondoni'=>$kinondoni, 'ilala'=>$ilala, 'kigamboni'=>$kigamboni, 
-     'temeke'=>$temeke, 'ubungo'=>$ubungo,'kijinsia'=>$kijinsia, 'kimwili'=>$kimwili,
-        'kihisia'=>$kihisia, 'mzazi'=>$mzazi, 'mlezi'=>$mlezi, 'mtumwingine'=>$mtumwingine ));
+        return view('home')->with(array('mme'=>$mme,
+                                        'mke'=>$mke, 
+
+                                        'zaidiya25'=>$zaidiya25,
+                                        'katiya18na28'=>$katiya18na28, 
+                                        'katiya8hadi17'=>$katiya8hadi17, 
+                                        'chiniya8'=>$chiniya8, 
+
+                                        'kinondoni'=>$kinondoni, 
+                                        'ilala'=>$ilala, 
+                                        'kigamboni'=>$kigamboni, 
+                                        'temeke'=>$temeke, 
+                                        'ubungo'=>$ubungo,
+                                        
+                                        'kijinsia'=>$kijinsia, 
+                                        'kimwili'=>$kimwili,
+                                        'kihisia'=>$kihisia, 
+                                        
+                                        'mzazi'=>$mzazi, 
+                                        'mlezi'=>$mlezi, 
+                                        'mtumwingine'=>$mtumwingine ));
     }
 }

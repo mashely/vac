@@ -7075,6 +7075,15 @@ else if ($text == "2")
 
 }
 
+
+
+
+
+
+
+
+
+
 public function jinsia(){
   $mme = null;
   $mke = null;
@@ -7087,14 +7096,19 @@ public function jinsia(){
   $idadi = $mme + $mke;
     $mme = $mme/$idadi * 100;
     $mke = $mke/$idadi * 100;
-  //
-  // if(count($data)){
-  //   foreach($data as $item){
-  //     $mme = $item->
-  //   }
-  // }
-  return response(['mme'=>round($mme), 'mke'=>round($mke), 'idadi'=>round($idadi)]);
+  
+
+  return response(['mme'=>round($mme), 
+                   'mke'=>round($mke), 
+                   'idadi'=>round($idadi)
+                ]);
 }
+
+
+
+
+
+  
 
 
 
@@ -7105,6 +7119,7 @@ public function umri(){
     $katiya18na28 = null;
     $katiya8hadi17 = null;
     $chiniya8 = null;
+    $idadi = null;
 
     $zaidiya25 = Rough1::select('id')->where('level_2', 1)->count();
     $katiya18na28 = Rough1::select('id')->where('level_2', 2)->count();
@@ -7124,36 +7139,99 @@ public function umri(){
                 ]);
   }
   
+
+
+
+
+
+
+
 public function mahali(){
-   
+
     $kinondoni = null;
     $ilala = null;
     $kigamboni = null;
     $temeke = null;
     $ubungo = null;
+    $idadi = null;
 
 
     $kinondoni = Rough1::select('id')->where('level_4', 1)->count();
     $ilala = Rough1::select('id')->where('level_4', 2)->count();
     $kigamboni = Rough1::select('id')->where('level_4', 3)->count();
     $temeke = Rough1::select('id')->where('level_4', 4)->count();
-    $ubungo = Rough1::select('id')->where('level_4', 4)->count();
+    $ubungo = Rough1::select('id')->where('level_4', 5)->count();
 
     
       $idadi = $kinondoni + $ilala + $kigamboni + $temeke + $ubungo;
       $kinondoni = $kinondoni/$idadi * 100;
       $ilala = $ilala/$idadi * 100;
+      $kigamboni = $kigamboni/$idadi*100;
       $temeke = $temeke/$idadi * 100;
       $ubungo = $ubungo/$idadi * 100;
 
-    return response(['idadi'=>round($idadi), 
-                    'kinondoni'=>round($kinondoni), 
+    return response(['kinondoni'=>round($kinondoni), 
                     'ilala'=>round($ilala),
+                    'kigamboni'=>round($kigamboni),
                     'temeke'=>round($temeke),
                     'ubungo'=>round($ubungo),
                 ]);
   }
 
 
+
+
+
+
+
+
+public function ainazaunyanyasaji(){
+    $kijinsia=null;
+    $kimwili=null;
+    $kihisia=null;
+    $idadi=null;
+
+    $kijinsia = Rough1::select('id')->where('level_6', 1)->count();
+    $kimwili = Rough1::select('id')->where('level_6', 2)->count();
+    $kihisia = Rough1::select('id')->where('level_6', 3)->count();
+
+    $idadi = $kijinsia + $kimwili + $kihisia;
+    $kijinsia = $kijinsia/$idadi * 100;
+    $kimwili = $kimwili/$idadi * 100;
+    $kihisia = $hisia/$idadi * 100;
+
+    return response(['kijinsia'=>round($kijinsia),
+                     'kimwili'=>round($kimwili),
+                     'kihisia'=>round($kihisia),
+                    ]);
+}
   
+
+
+
+
+
+
+
+public function muhusikawaunyanyasaji(){
+    $mzazi = null;
+    $mlezi = null;
+    $mtumwingine = null;
+    $idadi = null;
+
+    $mzazi = Rough1::select('id')->where('level_7',1)->count();
+    $mlezi = Rough1::select('id')->where('level_7',2)->count();
+    $mtumwingine = Rough1::select('id')->where('level_7',3)->count();
+
+    $idadi = $mzazi + $mlezi + $mtumwingine;
+    $mzazi = $mzazi/$idadi * 100;
+    $mlezi = $mlezi/$idadi * 100;
+    $mtumwingine = $mtumwingine/$idadi * 100;
+
+    return response (['mzazi'=>round($mzazi),
+                      'mlezi'=>round($mlezi),
+                      'mtumwingine'=>round($mtumwingine),
+                     ]);
+}
+
 }

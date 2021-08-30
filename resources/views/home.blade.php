@@ -153,8 +153,6 @@
                   <li><span class="legend-label" style="background-color:#392c70"></span>mzazi<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$mzazi}}%</label></li>
                   <li><span class="legend-label" style="background-color:#04b76b"></span>mlezi<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$mlaezi}}%</label></li>
                   <li><span class="legend-label" style="background-color:#ff5e6d"></span>mtumwingine<label class="badge badge-light badge-pill legend-percentage ml-auto">{{$mtumwingine}}%</label></li> 
-             
-          
           </ul></div>
         </div>
       </div>
